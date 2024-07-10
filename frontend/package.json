@@ -27,6 +27,7 @@
     "@mui/icons-material": "^5.15.21",
     "@mui/material": "^5.15.21",
     "@mui/styles": "^5.16.0",
+    "@mui/x-data-grid": "^7.9.0",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
     "formik": "^2.4.6",

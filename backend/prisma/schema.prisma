@@ -17,16 +17,22 @@ model Usuario {
   especializacao    Especializacao    @relation(fields: [especializacaoId], references: [id])
   casaId            Int
   casa              Casa              @relation(fields: [casaId], references: [id])
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
 }
 
 model Especializacao {
   id        Int       @id @default(autoincrement())
   nome      String    @unique
   usuarios  Usuario[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
 }
 
 model Casa {
   id        Int       @id @default(autoincrement())
   nome      String    @unique
   usuarios  Usuario[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
 }

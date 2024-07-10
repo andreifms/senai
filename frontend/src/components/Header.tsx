@@ -18,7 +18,7 @@ function Header({userName, title}: HeaderProps) {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{background: 'rgba(91,82,82,0.51)'}}>
       <Container maxWidth="xl">
         <Toolbar>
           <Typography variant="h6" style={ {flexGrow: 1} }>

@@ -11,5 +11,7 @@ export interface IUsuario {
   especializacao?: IEspecializacao;
   casaId: number;
   casa?: ICasa;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
