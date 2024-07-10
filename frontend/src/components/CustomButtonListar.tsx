@@ -3,14 +3,18 @@ import { Button } from '@mui/material';
 
 interface CustomButtonProps {
   text: string;
-  color?: 'inherit' | 'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning';
+  color?: string;
   onClick: () => void;
 }
 
-function CustomButton({text, color = 'primary', onClick}: CustomButtonProps) {
+function CustomButton({ text, color = '#1F3C70', onClick }: CustomButtonProps) {
   return (
-    <Button variant="contained" color={ color } onClick={ onClick }>
-      { text }
+    <Button
+      variant="contained"
+      sx={{ backgroundColor: color, color: '#fff', '&:hover': { backgroundColor: color } }}
+      onClick={onClick}
+    >
+      {text}
     </Button>
   );
 }
