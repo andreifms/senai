@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed": "ts-node src/seeder/seed.ts"
   },
   "keywords": [],
   "author": "",
