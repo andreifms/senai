@@ -3,7 +3,7 @@
 ## Descrição
 
 Este é um projeto completo que inclui um backend desenvolvido com Prisma e um frontend. Este documento fornece
-instruções  para configurar e executar ambos os lados da aplicação.
+instruções para configurar e executar ambos os lados da aplicação.
 
 ## Pré-requisitos
 
@@ -25,10 +25,11 @@ instruções  para configurar e executar ambos os lados da aplicação.
    cp .env.example .env
    ```
 3. Configurar o prisma:
-   ```bash
-npx prisma migrate dev
-npx prisma generate
-```
+   ```bash 
+   npx prisma migrate dev
+   npx prisma generate
+   ```
+
 4. Executar o servidor:
    ```bash
    npm start
@@ -36,7 +37,7 @@ npx prisma generate
 
 ## Configuração do Frontend
 
-1Instalar dependências:
+1. Instalar dependências:
    ```bash
    npm install
    ```
