@@ -29,8 +29,11 @@ instruções para configurar e executar ambos os lados da aplicação.
    npx prisma migrate dev
    npx prisma generate
    ```
-
-4. Executar o servidor:
+4. Executar o seed:
+   ```bash
+   npm run seed
+   ```
+5. Executar o servidor:
    ```bash
    npm start
    ```
@@ -45,4 +48,8 @@ instruções para configurar e executar ambos os lados da aplicação.
 2. Configurar variáveis de ambiente:
    ```bash
    cp .env.example .env
+   ```
+3. Executar o projeto:
+   ```bash
+   npm start
    ```
